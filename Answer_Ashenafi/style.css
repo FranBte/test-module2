@@ -210,7 +210,7 @@ div:nth-child(10) {
      
                         /*footer*/
     
-    ul {
+    footer>ul {
         background: skyblue;
         justify-content: center;
         display: flex;
