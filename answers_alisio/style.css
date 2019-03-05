@@ -1,0 +1,127 @@
+
+        header {
+            background-color: white;
+            text-align: center;
+        }
+
+        
+
+        li {
+            margin-bottom: 10px;
+        }
+        
+
+        .blue {
+            color: blue;
+        }
+
+.background {
+    background-image: ("images/tree.jpg");
+}
+
+.image-2 {
+    border: 1px solid blue;
+    padding: 1px;    
+}
+
+
+span:nth-child(even) {
+    background: blue;
+  }
+
+        span {
+            width: 95%;
+           padding: .5rem;
+            border: 1px solid black;
+            margin: .5rem;
+            display: inline-block;
+        }
+              
+        .container {
+            border: 2px solid black;
+        }
+
+        .item {
+            border: 2px solid blue;
+            height: 10rem;
+            width: 10rem;
+            margin: 1rem;  
+        }
+
+        .mediaquery {
+            border: 3px solid black;
+            background-color: purple;
+            
+        }
+
+        /* Mobile Background Starts */
+        @media only screen and (max-width: 768px) {
+            .mediaquery {
+              background-color:blue;
+             
+            }
+          }
+          /* Mobile Background Ends */
+
+
+          /* Tablet Background Starts */
+          @media (min-width: 768px) and (max-width: 1024px) {
+            .mediaquery {
+                  background-color: yellow;
+                  
+              }
+          }
+          /* Tablet Background Ends */
+
+          /*  Desktop Background Starts */
+          @media (min-width: 1024px) and (max-width: 1440px) {
+            .mediaquery {
+                background-color: red;
+                
+            }
+        }
+        /* Desktop Background Ends */
+
+
+        /*  Large Desktop Background Starts */
+        @media (min-width: 1440px) {
+            .mediaquery {
+                background-color: purple;
+                size: 5rem x 5rem;
+            }
+        }
+        /* Large Desktop Background Ends */
+
+
+
+
+
+        .box {
+            border: 2px solid black;
+            height: 20rem;
+            width: 20rem;
+        }
+        
+        .relative, .absolute {
+            border: 2px solid blue;
+           
+        }
+
+        .relative {
+            height: 10rem;
+            width: 10rem;
+            
+        }
+
+        .absolute {
+            height: 5rem;
+            width: 5rem;
+        }
+
+
+        h3 {
+            color: aqua;
+            font-size: 25px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
