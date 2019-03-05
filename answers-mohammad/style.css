@@ -1,0 +1,122 @@
+header {
+    text-align: center;
+}
+
+#blue {
+    color: blue;
+}
+
+.background {
+    width: 300px;
+    height: 200px;
+    background-image: url(images/tree.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.images {
+    display: flex;
+}
+[alt="Image 2"] {
+    padding: 5px;
+    border: 1px solid blue;
+}
+
+.spans > span:nth-child(even) {
+    background-color: blue;
+}
+
+.relative {
+    position: relative;
+    left: 160px;
+}
+
+.absolute {
+    position: absolute;
+    top: 77px;
+}
+
+#fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    border: 1px solid black;
+    grid-gap: 5px;
+}
+
+.wrapper > div {
+    border: 1px solid black;
+}
+
+.celltwo {
+    grid-row: 2 / span 2;
+}
+
+.cellthree {
+    grid-row: 1 / span 2;
+    grid-column: 3 / span 2;
+}
+
+.cellseven {
+    grid-column: 3 / span 2;
+}
+
+.h3 {
+    color: blue;
+    font-size: 3rem;
+    font-family: fantasy;
+}
+
+a:hover {
+    color: red;
+}
+
+a:visited {
+    color: purple;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .mediaquery {
+        height: 5rem;
+        width: 5rem;
+        background-color: blue;
+    }
+}
+
+@media screen and (min-width: 768) and (max-width: 1023) {
+    .mediaquery {
+        height: 7rem;
+        width: 7rem;
+        background-color: yellow;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .mediaquery {
+        height: 10rem;
+        width: 10rem;
+        background-color: red;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .mediaquery {
+        height: 12rem;
+        width: 12rem;
+        background-color: purple;
+    }
+}
