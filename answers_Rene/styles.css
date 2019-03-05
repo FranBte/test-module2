@@ -1,0 +1,123 @@
+header {
+    text-align: center;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+
+ol>li:nth-child(3) {
+    color: blue;
+}
+
+.background {
+    width: 15rem;
+    height: 15rem;
+    background: url(./images/tree.jpg) center/cover no-repeat;
+    display: inline-block;
+}
+
+[alt="Image 2"] {
+    padding: 1rem;
+    border: 2px solid blue;
+}
+
+div>span:nth-child(even) {
+    background-color: dodgerblue;
+}
+
+.mediaquery {
+    width: 5rem;
+    height: 5rem;
+    background-color: blue;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .mediaquery {
+        width: 7rem;
+        height: 7rem;
+        background-color: yellow;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .mediaquery {
+        width: 10rem;
+        height: 10rem;
+        background-color: red;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .mediaquery {
+        width: 12rem;
+        height: 12rem;
+        background-color: purple;
+    }
+}
+
+.relative {
+    position: relative;
+    left: 156px;
+}
+
+.absolute {
+    position: absolute;
+    top: 76px;
+}
+
+main {
+    margin: 167.5px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item {
+    flex-grow: 1;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    border: red 1px solid;
+    grid-gap: 5px;
+}
+
+.cell{
+    border: 1px solid blue;
+}
+
+.two {
+    grid-row: 2/4;
+}
+
+.three {
+    grid-column: 2/4;
+    grid-row: 1/3;
+}
+
+.seven {
+    grid-column: 2/4;
+}
+
+.heading {
+    color: chartreuse;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+}
+
+footer a:visited {
+    color: red;
+}
+
+footer a:hover {
+    color: dodgerblue;
+}
+
+ol li {
+    text-decoration: line-through;
+}
