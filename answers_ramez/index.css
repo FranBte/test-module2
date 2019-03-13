@@ -1,0 +1,221 @@
+ header {
+
+    text-align: center;
+    
+
+    
+    
+}
+
+
+
+ol,li {
+    color: blue;
+}
+
+.background{
+
+   
+    width: 19rem;
+    height: 13rem;
+    background-image: url(./images/tree.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid blue;
+   
+    
+   
+
+}
+
+ .images {
+
+    display: flex;
+    flex-direction: column wrap;
+    justify-content: space-between;
+ 
+} 
+
+.mauntain {
+
+    border: 2px solid blue;
+    padding: 1rem;
+}
+
+span:nth-child(odd) {
+
+    background-color: pink;
+}
+
+span:nth-child(even) {
+
+    background-color: gray;
+}
+
+
+.mediaquery {
+
+    background-color: blue;
+    width: 5rem;
+    height: 5rem;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .images {
+
+        display: flex;
+        flex-flow: column;
+        align-content: center;
+        width: 20rem;
+        
+        
+    }    
+}
+
+@media only screen and (min-width: 768px) {
+
+    .mediaquery {
+
+        background-color: yellow;
+        width: 7rem;
+         height: 7rem;
+    }
+
+   
+}
+
+
+
+@media only screen and (min-width: 1024px) {
+
+    .mediaquery {
+
+        background-color: red;
+        width: 10rem;
+         height: 10rem;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+
+    .mediaquery {
+
+        background-color: purple;
+        width: 12rem;
+         height: 12rem;
+    }
+}
+
+
+.relative {
+
+    position: relative;
+    float: right;
+}
+
+.absolute {
+
+    position: absolute;
+    float: left;
+    top: 78px;
+}
+
+.box1 {
+    
+    display: block;
+    position: relative;
+  
+}
+
+
+
+.container {
+
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+  
+    
+
+}
+
+.item{
+    flex-grow: 1;
+}
+
+.wrapper {
+
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+
+.wrapper .cell {
+
+    
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+}
+
+
+.two {
+
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.three {
+
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+}
+
+.seven {
+
+
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.footer {
+
+    font-size: 50px;
+    color: brown;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
