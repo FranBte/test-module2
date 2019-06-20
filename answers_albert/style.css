@@ -152,7 +152,20 @@ header, main, section, h3, div, footer {
 .cell {
     border: 1px solid red;
    margin-left: 0;
+}
 
+.two {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.seven {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
 }
 
 /* TASK 13 */
